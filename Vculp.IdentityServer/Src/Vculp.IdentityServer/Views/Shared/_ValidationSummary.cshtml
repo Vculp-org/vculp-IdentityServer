@@ -1,0 +1,8 @@
+﻿@if (ViewContext.ModelState.IsValid == false)
+{
+<div>
+    <span class="help-block">
+        <div asp-validation-summary="All" class="text-danger"></div>
+    </span>
+</div>
+}

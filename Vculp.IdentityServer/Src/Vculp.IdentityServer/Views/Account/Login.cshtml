@@ -1,0 +1,49 @@
+@model Vculp.IdentityServer.Quickstart.Account.LoginViewModel
+@{
+    Layout = "/Views/Shared/_LayoutWithoutHeader.cshtml";
+}
+
+<div class="login-page">
+
+    <div class="row">
+
+        @if (Model.EnableLocalLogin)
+        {
+            <div class="col-sm-12">
+                <div class="form-wrapper">
+                    <div style="align-content:center">
+                        <div class="image-div-header mg-top-image mg-bt-image">
+                            @* <img src="/images/logo.png" class="header-image"> *@
+                        </div>
+
+                        <h4 class="h4-center">Log into your account</h4>
+                    </div>
+                    <div class="panel-body">
+
+                        <form asp-route="Login">
+                            <input type="hidden" asp-for="ReturnUrl" />
+
+                            <fieldset>
+                                <partial name="_ValidationSummary" />
+
+                                <div class="form-group">
+                                    <input class="form-control textbox-style" placeholder="Email" asp-for="Username" autofocus>
+                                </div>
+                                <div class="form-group mg-bt-25">
+                                    <input type="password" class="form-control textbox-style" placeholder="Password" asp-for="Password" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary login-button"
+                                            name="button" value="login">
+                                        Login
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

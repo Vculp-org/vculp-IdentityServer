@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <AssemblyName>Vculp.IdentityServer.Models</AssemblyName>
+    <RootNamespace>Vculp.IdentityServer.Models</RootNamespace>
+    <PackageId>Vculp.IdentityServer.Models</PackageId>
+    <Authors>Vculp.IdentityServer.Models</Authors>
+    <Company>Vculp.IdentityServer.Models</Company>
+    <Product>Vculp.IdentityServer.Models</Product>
+    <LangVersion>latestmajor</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ApplicationRoleEntity.cs~RF14e010ee.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="6.0.16" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,199 @@
+﻿body {
+    margin-top: 65px;
+}
+
+.navbar-header {
+    position: relative;
+    top: -4px;
+}
+
+.navbar-brand > .icon-banner {
+    position: relative;
+    top: -2px;
+    display: inline;
+}
+
+.icon {
+    position: relative;
+    top: -10px;
+}
+
+.logged-out iframe {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.page-consent {
+    .client-logo {
+        float: left;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .consent-buttons {
+        margin-top: 25px;
+    }
+
+    .consent-form {
+        .consent-scopecheck {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .consent-scopecheck[disabled] {
+            //visibility:hidden;
+        }
+
+        .consent-description {
+            margin-left: 25px;
+
+            label {
+                font-weight: normal;
+            }
+        }
+
+        .consent-remember {
+            padding-left: 16px;
+        }
+    }
+}
+
+.grants {
+    .page-header {
+        margin-bottom: 10px;
+    }
+
+    .grant {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid lightgray;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .clientname {
+            font-size: 140%;
+            font-weight: bold;
+        }
+
+        .granttype {
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        .created {
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        .expires {
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline;
+
+            &:after {
+                content: ', ';
+            }
+
+            &:last-child:after {
+                content: '';
+            }
+
+            .displayname {
+            }
+        }
+    }
+}
+
+.form-wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.header-image {
+    align-content: center;
+    width: 100%;
+    padding: 5px;
+    height: auto;
+    display: block;
+    -webkit-backface-visibility: hidden;
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.image-div-header {
+    align-content: center;
+    width: 280px;
+    margin: auto
+}
+
+.mg-top-image {
+    margin-top: 30px;
+}
+
+.mg-bt-image {
+    margin-bottom: 20px;
+}
+
+.mg-bt-25 {
+    margin-bottom: 25px;
+}
+
+.textbox-style {
+    background: #F1F2F6;
+    outline: 0;
+    border-color: transparent;
+}
+
+.h4-center {
+    text-align: center;
+}
+
+.login-button {
+    width: 100%;
+    background: #F6C842;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: navy !important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: navy !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: navy !important;
+}
+.text-danger {
+    color: #FF0000;
+}
+.help-block ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 15px;
+}
